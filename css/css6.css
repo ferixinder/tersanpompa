@@ -1,0 +1,88 @@
+.form-product{width:900px; background:rgba(255,255,255,.9); box-shadow:0px 5px 15px 0px rgba(0,0,0,.25); padding:3rem; border-radius:.25rem; position:relative;}
+.form-contact{width:100%;}
+.form-contact.tabmenu{display:none;}
+.form-contact.tabmenu.active{display:flex;}
+.form-contact .title{width:100%; margin-bottom:2rem; font-size:1rem; font-weight:bold; color:var(--black);}
+/* FORM ITEM */
+.formitem{width:100%; margin-bottom:1rem;}
+.formitem.small{width:100%; margin-bottom:.5rem;}
+.formitem.pr{padding-right:3rem;}
+.formitem.pr.small{padding-right:2rem;}
+.formitem fieldset{width:100%; display:flex; flex-wrap:wrap;}
+.formitem label{width:100%; margin-bottom:.25rem; font-size:.9rem; font-weight:bold;}
+.formitem.small label{font-size:.8rem; font-weight:500; margin-bottom:.125rem;}
+.formitem input{width:100%; height:3.375rem; background:#FFF; border:solid 1px #dadada; border-radius:.1rem; outline:none; color:var(--black); padding:.5rem 1rem; font-size:.9rem;}
+.formitem.small input{height:2.25rem;}
+.formitem input:hover{border:solid 1px #666;}
+.formitem textarea{width:100%; height:10rem; background:#FFF; border:solid 1px #dadada; border-radius:.1rem; outline:none; color:var(--black); padding:.5rem 1rem; font-size:.9rem;}
+.formitem.small textarea{height:8rem;}
+.formitem textarea:hover{border:solid 1px #666;}
+.formitem.error input, .formitem.error textarea{border:1px solid #FF0000;}
+.formitem.warning input, .formitem.warning textarea{border:1px solid #FFFF00;}
+.formitem.success input, .formitem.success textarea{border:1px solid #00FF00;}
+
+.formitem .feedback{font-size:.75rem;}
+.formitem.error .feedback{color:#FF0000;}
+.formitem.warning .feedback{color:#FFFF00;}
+.formitem.success .feedback{color:#00FF00;}
+
+.resultmessage{display:none;}
+.resultmessage div{font-size:.8rem; padding:.25rem; border-radius:.25rem;}
+.resultmessage .error{color:#FF5722; border:dotted 1px rgba(255, 87, 34, 0.5); background:rgba(255, 87, 34, 0.01);}
+.resultmessage .warning{color:#333; border:dotted 1px rgba(255, 193, 7, 0.5); background:rgba(255, 193, 7, 0.01);}
+.resultmessage .success{color:#4CAF50; border:dotted 1px rgba(76, 175, 80, 0.5); background:rgba(76, 175, 80, 0.01);}
+
+.formitem .button{cursor:pointer; border-radius:.1rem; display:flex; flex-wrap:wrap; flex-wrap:wrap; align-items:center; justify-content:center;}
+.formitem .button.small{padding:0px 5rem; font-size:.9rem; line-height:2.875rem;}
+.formitem .button.medium{padding:0px 6rem; font-size:1rem; line-height:3.375rem;}
+.formitem .button.large{padding:0px 7rem; font-size:1.1rem; line-height:3.875rem; font-weight:300;}
+.formitem .button.prime{background:var(--prime); color:#FFF; border:solid 1px #dadada;}
+.formitem .button.prime:hover{background:#2291C0;}
+.formitem .button.red{color:#FFF; border:solid 1px var(--red); background:var(--red);}
+.formitem .button.red:hover{background:none; color:var(--red);}
+
+.formitem .buttonborder{cursor:pointer; border-radius:.25rem; display:flex; flex-wrap:wrap; flex-wrap:wrap; align-items:center; justify-content:center;}
+.formitem .buttonborder.full{width:100%;}
+.formitem .buttonborder.small{padding:0px 1rem; font-size:.9rem; line-height:2rem;}
+.formitem .buttonborder.medium{padding:0px 1.5rem; font-size:1rem; line-height:2.5rem;}
+.formitem .buttonborder.large{padding:0px 3rem; font-size:1.1rem; line-height:3rem; font-weight:300;}
+.formitem .buttonborder.prime{border:solid 1px #dadada; color:var(--prime);}
+.formitem .buttonborder.prime:hover{background:var(--prime); color:#FFF;}
+
+.formitem .buttonload{display:none; border-radius:.25rem; position:relative;}
+.formitem .buttonload.full{width:100%;}
+.formitem .buttonload.small{width:2rem; height:2rem;}
+.formitem .buttonload.medium{width:2.5rem; height:2.5rem;}
+.formitem .buttonload.large{width:3rem; height:3rem;}
+.formitem .buttonload.prime{background:var(--prime);}
+.formitem .buttonload.white{border:solid 1px #dadada; background-image:linear-gradient(0deg, #E9E9E9, #FFFFFF);}
+.formitem .buttonload .load1, .formitem .buttonload .load2{width:100%; height:100%; border-radius:50%; background-color:#FFF; opacity:.6; position:absolute; top:0; left:0; -webkit-animation:btnload 2.0s infinite ease-in-out; animation:btnload 2.0s infinite ease-in-out;}
+.formitem .buttonload .load2{animation-delay:-1.0s;}
+@-webkit-keyframes btnload{0%, 100%{-webkit-transform:scale(0.0)}50%{ -webkit-transform:scale(1.0)}}
+@keyframes btnload{0%, 100%{transform:scale(0.0); -webkit-transform:scale(0.0);} 50%{transform:scale(1.0); -webkit-transform:scale(1.0);}}
+
+.formitem .items{width:100%; display:flex; flex-wrap:wrap; position:relative;}
+.formitem .items .item{display:flex; flex-wrap:nowrap; position:relative; margin-right:.5rem; overflow:hidden; align-items:center;}
+.formitem .items .item.end{flex-direction:row-reverse; justify-content:space-between;}
+.formitem .items .item.full{width:100%; margin:.57rem 0; margin-right:0px;}
+.formitem .items .item input{width:1.75rem; height:1.75rem; position:relative;}
+.formitem .items .item input::before{transition:all 0.5s ease; content:''; width:1.75rem; height:1.75rem; cursor:pointer; position:absolute; top:0; left:5px; background:#FFF; border:solid 1px #dadada; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
+.formitem .items .item.end input::before{right:0px; left:auto;}
+.formitem .items .item input::after{transition:all 0.5s ease; content:''; width:16px; height:8px; position:absolute; top:8px; left:5px; border:3px solid #FFF; border-top:none; border-right:none; background:transparent; opacity:0; transform:rotate(-45deg);}
+.formitem .items .item input:hover::before{border:solid 2px var(--prime);}
+.formitem .items .item input[type=checkbox]:checked::before{border:solid 2px var(--prime); background:var(--prime);}
+.formitem .items .item input[type=checkbox]:checked::after{opacity:1;}
+.formitem .items .item input[type=radio]:checked::before{border:solid 2px var(--prime); background:var(--prime); border-radius:50%;}
+.formitem .items .item input[type=radio]:checked::after{opacity:1;}
+.formitem .items .item label{border:none!important; font-size:.9rem; box-shadow:none; position:relative; color:#333; font-weight:300; line-height:1.25rem; height:auto !important; padding-left:.5rem; cursor:pointer; letter-spacing:0; display:flex; flex-wrap:wrap; margin-bottom:0px;}
+.formitem .items .item.end label{padding:0 .5rem 0 0;}
+.formitem .items .item label a{color:#333; text-decoration:underline;}
+.formitem .items .item label a:hover, .formitem .items .item p a:hover{text-decoration:none;}
+.formitem .items .item label:hover{color:var(--prime);}
+.formitem .items .item label:after{display:none;}
+
+@media only screen and (max-width:767px){
+    .form-product{padding:1rem; max-height:90vh; overflow-y:scroll;}
+    .formitem.pr{padding-right:0rem;}
+    .formitem.pr.small{padding-right:0rem;}
+}

@@ -1,0 +1,10 @@
+.search-lists{width:100%; padding:2rem 0px;}
+.search-lists .keyword{width:100%; display:flex; flex-wrap:wrap; color:var(--black); font-size:1.125rem; margin-bottom:1rem; font-weight:bold;}
+.search-lists .items{width:100%; display:flex; flex-wrap:wrap;}
+.search-lists .items .item{width:100%; display:flex; flex-wrap:wrap; margin-bottom:2rem;}
+.search-lists .items .item .title{width:100%; display:flex; flex-wrap:wrap; font-size:1.5rem; color:var(--black); font-weight:bold;}
+.search-lists .items .item .description{width:100%; font-size:.9rem; line-height:2; color:var(--black); margin:1rem 0px; font-weight:lighter;}
+.search-lists .items .item a{display:flex; font-size:1rem; color:var(--black); align-items:center;}
+.search-lists .items .item a img{margin-left:1rem; height:15px; width:10px;}
+.search-lists .items .item a:hover{color:var(--red);}
+.search-lists .items p{width:100%; font-size:1.1rem; color:var(--black);}

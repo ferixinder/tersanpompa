@@ -1,0 +1,26 @@
+/* PROJECT */
+    .dealers-project{display:flex; flex-wrap:wrap; width:100%;}
+    .dealers-project.tabmenu{display:none;}
+    .dealers-project.tabmenu.active{display:flex;}
+    .dealers-project .selects{width:100%; display:flex; flex-wrap:nowrap; margin-bottom:2.5rem;}
+    .dealers-project select{width:49%; height:50px; border:solid 1px #dadada; padding:0px 1rem; font-size:1rem;}
+    .dealers-project select:first-child{margin-right:2%;}
+    .dealers-project .mapitems{width:100%;}
+    .dealers-project .mapitems .map{width:100%; height:350px; margin-bottom:2.5rem;}
+    .dealers-project .mapitems .items{width:100%; display:flex; flex-wrap:wrap;}
+    .dealers-project .mapitems .items .item{width:33.33%; padding-right:3%; display:flex; flex-wrap:wrap; margin-bottom:2rem; justify-content:flex-start; flex-direction:column;}
+    .dealers-project .mapitems .items .item .title{width:100%; display:flex; flex-wrap:wrap; font-weight:bold; align.mapitems -items:flex-start; font-size:1rem; line-height:1.25; margin-bottom:.25rem;}
+    .dealers-project .mapitems .items .item .infos{width:100%;}
+    .dealers-project .mapitems .items .item .info{width:100%; font-size:0.875rem; color:var(--black); margin:.125rem 0px;}
+    .dealers-project .mapitems .items .item .info span{font-weight:bold;}
+    @media only screen and (max-width:768px){
+        .dealers-project .selects{margin-bottom:1.5rem;}
+        .dealers-project .mapitems .items .item{width:50%;}
+    }
+    @media only screen and (max-width:767px){
+        .dealers-project .selects{flex-wrap:wrap;}
+        .dealers-project select{width:100%;}
+        .dealers-project select:first-child{margin-right:0; margin-bottom:1rem;}
+        .dealers-project .mapitems .items .item{width:100%;}
+        .dealers-project .mapitems .items .item .title{height:auto;}
+    }

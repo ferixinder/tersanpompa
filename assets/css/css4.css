@@ -1,0 +1,110 @@
+.productcontents-content {
+  width:100%;
+  display:none;
+  flex-wrap:wrap;
+}
+
+.productcontents-content .content {
+  width:100%;
+}
+
+.productcontents-tablecontent {
+  width:100%;
+  display:none;
+  flex-wrap:wrap;
+  box-shadow:0 10px 22px 0 rgba(28, 44, 89, 0.08);
+  background-color:#ffffff;
+  padding:3rem;
+}
+
+.productcontents-tablecontent .content {
+  width:100%;
+}
+
+.productcontents-tablecontent .content table {
+  width:100%;
+}
+
+.productcontents-tablecontent .content table table {
+  width:100%;
+}
+
+.productcontents-tablecontent .content tbody {
+  width:100%;
+}
+
+.productcontents-tablecontent .content table tr td {
+  width:100%;
+  vertical-align:text-top;
+  border-bottom:solid 1px rgba(34, 30, 31, 0.1);
+  padding:.75rem 0px;
+}
+
+.productcontents-tablecontent .content table tr td:first-child {
+  width:50%;
+  font-size:1rem;
+}
+
+.productcontents-tablecontent .content table tr td:last-child {
+  text-align:right;
+}
+
+.productcontents-tablecontent .content table tr td {
+  font-size:1rem;
+  line-height:1.5rem;
+  color:var(--black);
+}
+
+.productcontents-tablecontent .content table table tr td {
+  width:auto !important;
+  font-weight:300 !important;
+  font-size:1rem !important;
+}
+
+@media only screen and (max-width:768px) {
+  .productcontents-tablecontent {
+    padding:1.5rem;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .productcontents-tablecontent {
+    padding:1rem;
+  }
+}
+
+.productcontents-pdf {
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  box-shadow:0 10px 22px 0 rgba(28, 44, 89, 0.08);
+  background-color:#ffffff;
+  padding:3rem;
+}
+
+.productcontents-pdf ul {
+  width:100%;
+}
+
+.productcontents-pdf ul li {
+  width:100%;
+  margin-bottom:1.5rem;
+  list-style:disc;
+}
+
+.productcontents-pdf ul li a {
+  font-size:1rem;
+  color:var(--black);
+}
+
+.productcontents-pdf ul li a:hover {
+  color:var(--red);
+}
+
+@media only screen and (max-width:767px) {
+  .productcontents-pdf {
+    box-shadow:none;
+    padding:0px 0px 0px 2rem;
+  }
+}
+
